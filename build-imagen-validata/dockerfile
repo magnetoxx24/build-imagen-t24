@@ -1,0 +1,4 @@
+FROM   t24registry.azurecr.io/temenos-app:products_uxp.1
+COPY --chown=jboss:jboss Validata.jar /opt/jboss/wildfly/modules/com/temenos/t24/main/lib/
+COPY --chown=jboss:root module.xml /opt/jboss/wildfly/modules/com/temenos/t24/main/
+COPY --chown=jboss:jboss RSDefaultProperties.properties /srv/Temenos/properties/ 
