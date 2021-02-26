@@ -1,0 +1,2 @@
+FROM   t24registry.azurecr.io/temenos-app:ISB_APP_GOLD_FEB_11
+COPY --chown=jboss:jboss RSDefaultProperties.properties /srv/Temenos/properties/ 
